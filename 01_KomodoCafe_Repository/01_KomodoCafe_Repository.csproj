@@ -45,5 +45,11 @@
     <Compile Include="MenuRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\01_KomodoCafe\01_KomodoCafe.csproj">
+      <Project>{8cbc1eb4-7a1e-417e-a445-eed9b5022d0d}</Project>
+      <Name>01_KomodoCafe</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

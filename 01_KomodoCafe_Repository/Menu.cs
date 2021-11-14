@@ -8,13 +8,14 @@ namespace _01_KomodoCafe_Repository
 {
     public class Menu
     {
+       
         public Menu() {}
         public Menu(int id, string mealName, double price)
         {
             ID = id;
             MealName = mealName;
             Price = price;
-
+             
         }
         public Menu(string mealName, string description, string ingredients, double price)
         {
