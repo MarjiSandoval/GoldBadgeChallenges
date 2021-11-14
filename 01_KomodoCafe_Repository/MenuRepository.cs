@@ -29,11 +29,11 @@ namespace _01_KomodoCafe_Repository
         }
 
         // Get one
-        public Menu GetMenuByMealName()
+        public Menu GetMenuByMealName(string mealName)
         {
             foreach (Menu MealName in _menu)  
             {
-                if (MealName == mealName)
+                if (Menu.MealName == mealName)
                 {
                     return MealName;
                 }
