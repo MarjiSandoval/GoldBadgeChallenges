@@ -9,7 +9,7 @@ namespace _01_KomodoCafe
 {
     public class ProgramUI
     {
-        private readonly Menu _menu = new Menu();
+        private readonly MenuRepository _menu = new MenuRepository();
 
         public void Run()
         {
@@ -63,18 +63,18 @@ namespace _01_KomodoCafe
             Menu menuItem = new Menu();
 
             Console.WriteLine("Please add a Meal Name: ");
-            Menu.MealName = Console.ReadLine();
+            menuItem.MealName = Console.ReadLine();
 
             Console.WriteLine("Please enter a Description: ");
-            Menu.Description = Console.ReadLine();
+            menuItem.Description = Console.ReadLine();
 
             Console.WriteLine("Please enter ingredients: ");
-            Menu.Ingredients = Console.ReadLine();
+            menuItem.Ingredients = Console.ReadLine();
 
             Console.WriteLine("Please enter a Price: ");
-            Menu.Price = Console.ReadLine();
+            menuItem.Price = double.Parse(Console.ReadLine());
 
-            if (_menu.AddToMenu())
+            if (_menu.AddToMenu(menuItem))
             {
                 Console.WriteLine("Meal Added!!");
                 AnyKey();
@@ -90,13 +90,20 @@ namespace _01_KomodoCafe
         private void GetMenu()
         {
             Console.Clear();
-            List<Menu> listofMeals = _menu.GetMenu();
+           
 
-            foreach (Menu ID in _menu)
+            foreach (Menu menu in _menu.GetMenu())
             {
-                DisplayMeal(listofMeals);
+                DisplayMeal(menu);
             }
             AnyKey();
+        }
+
+        private void DisplayMeal(Menu menu)
+        {
+            Console.Clear();
+
+            List<Menu> MealName = _menu.GetMenu();
         }
 
         private void DeleteMenuItem()
@@ -107,32 +114,22 @@ namespace _01_KomodoCafe
             List<Menu> currentMenu = _menu.GetMenu();
 
             int count = 0;
-            foreach (Menu ID in _menu)
+            foreach (Menu ID in currentMenu)
             {
                 count++;
                 Console.WriteLine($"{ count}.{ ID}");
 
             }
             int targetMenuID = int.Parse(Console.ReadLine());
-            int targetIndex = targetMenuID - 1;
-            if (targetIndex >=0 && targetIndex < MealID.Count)
+            bool success = _menu.DeleteExistingMenuItem(targetMenuID);
+            if (success)
             {
-                Menu MealName = MealID.Count[targetIndex];
-
-                if (_menu.DeleteMenuItem(MealID))
-                {
-                    Console.WriteLine($"{MealID.MealName} was deleted.");
-                    AnyKey();
-
-                }
-                else
-                {
-                    Console.WriteLine("Delete failed");
-                    AnyKey();
-                }
+                Console.WriteLine("Your item has been deleted");
             }
             else
-                Console.WriteLine("No Meals with that ID");
+                Console.WriteLine("Delete did not work");
+
+            AnyKey();
         }
 
         private void AnyKey()
@@ -150,7 +147,7 @@ namespace _01_KomodoCafe
 
             _menu.AddToMenu(freshSalad);
             _menu.AddToMenu(sandwich);
-            _menu.AddToMeny(lunch);
+            _menu.AddToMenu(lunch);
             _menu.AddToMenu(dinner);
         }
     }

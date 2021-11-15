@@ -10,15 +10,26 @@ namespace _01_KomodoCafe_Repository
     public class MenuRepository
     {
         protected readonly List<Menu> _menu = new List<Menu>();
+        int Count = 0;
 
         //Create
         public bool AddToMenu(Menu menu)
         {
-            int menuItem = _menu.Count;
-            _menu.Add(menu);
+            if (menu is null)
+            {
+                return false;
+            }
+            else
+            {
+                Count++;
+                menu.ID = Count;
+                _menu.Add(menu);
 
-            bool wasSuccessful = (_menu.Count > menuItem) ? true : false;
-            return wasSuccessful;
+                return true;
+            }
+
+
+            
         }
 
         //Read - Get all
@@ -29,41 +40,50 @@ namespace _01_KomodoCafe_Repository
         }
 
         // Get one
-        public Menu GetMenuByMealName(string mealName)
+        public Menu GetMenuByMealID(int ID)
         {
-            foreach (Menu MealName in _menu)  
+            foreach (Menu Meal in _menu)  
             {
-                if (Menu.MealName == mealName)
+                if (Meal.ID == ID)
                 {
-                    return MealName;
+                    return Meal;
                 }
             }
             return null;
         }
 
         //Update
-        public bool UpdateExistingMenuItems(string newItem)
-        {
-            Menu oldItem = GetMenuByMealName(mealName);
-            if (MealName != null)
-            {
-                oldItem.MealName = newItem.MealName;
-                oldItem.Price = newItem.Price;
-                oldItem.ID = newItem.ID;
+        //public bool UpdateExistingMenuItems(int ID, Menu newMealData)
+        //{
+        //    Menu oldItem = GetMenuByMealID(ID);
+        //    if (oldItem != null)
+        //    {
+        //        oldItem.MealName = newMealData.MealName;
+        //        oldItem.Price = newMealData.Price;
+        //        oldItem.ID = newMealData.ID;
 
-                return true;
+        //        return true;
 
 
-            }
-            else
-                return false;
-        }
+        //    }
+        //    else
+        //        return false;
+        //}
         
         // Delete
 
-        public List<Menu> DeleteExistingMenuItem(string MealName)
+        public bool DeleteExistingMenuItem(int ID)
         {
-            return DeleteExistingMenuItem(GetMenuByMealName(mealName));
+            foreach (var item in _menu)
+            {
+                if (item.ID == ID)
+                {
+                    _menu.Remove(item);
+                    return true;
+                }
+            }
+            return false;
+            
         }
 
 

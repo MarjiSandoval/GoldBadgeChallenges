@@ -1,0 +1,15 @@
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe_Tests\bin\Debug\01_KomodoCafe_Tests.dll
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe_Tests\bin\Debug\01_KomodoCafe_Tests.pdb
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe_Tests\bin\Debug\01_KomodoCafe_Repository.dll
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe_Tests\bin\Debug\01_KomodoCafe_Repository.pdb
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe_Tests\obj\Debug\01_KomodoCafe_Tests.csproj.AssemblyReference.cache
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe_Tests\obj\Debug\01_KomodoCafe_Tests.csproj.CoreCompileInputs.cache
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe_Tests\obj\Debug\01_KomodoCafe_Tests.dll
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe_Tests\obj\Debug\01_KomodoCafe_Tests.pdb

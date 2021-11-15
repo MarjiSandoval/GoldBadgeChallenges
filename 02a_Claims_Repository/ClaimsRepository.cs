@@ -8,5 +8,10 @@ namespace _02a_Claims_Repository
 {
     class ClaimsRepository
     {
+        protected readonly List<Claims> _claims = new List<Claims>;
+        int Count = 0;
+
+        //Create
+
     }
 }
