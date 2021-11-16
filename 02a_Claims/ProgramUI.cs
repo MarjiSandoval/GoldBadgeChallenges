@@ -60,7 +60,7 @@ namespace _02a_Claims
 
         private bool Exit()
         {
-            Console.WriteLine("Thanks for using");
+            Console.WriteLine("Thanks for using the application");
             return false;
         }
 
