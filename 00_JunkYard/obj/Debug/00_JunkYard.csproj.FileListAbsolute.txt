@@ -1,0 +1,7 @@
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\00_JunkYard\bin\Debug\00_JunkYard.exe.config
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\00_JunkYard\bin\Debug\00_JunkYard.exe
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\00_JunkYard\bin\Debug\00_JunkYard.pdb
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\00_JunkYard\obj\Debug\00_JunkYard.csproj.AssemblyReference.cache
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\00_JunkYard\obj\Debug\00_JunkYard.csproj.CoreCompileInputs.cache
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\00_JunkYard\obj\Debug\00_JunkYard.exe
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\00_JunkYard\obj\Debug\00_JunkYard.pdb

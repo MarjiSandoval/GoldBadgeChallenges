@@ -1,0 +1,6 @@
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\02a_Claims_Repository\obj\Debug\02a_Claims_Repository.csproj.AssemblyReference.cache
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\02a_Claims_Repository\obj\Debug\02a_Claims_Repository.csproj.CoreCompileInputs.cache
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\02a_Claims_Repository\bin\Debug\02a_Claims_Repository.dll
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\02a_Claims_Repository\bin\Debug\02a_Claims_Repository.pdb
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\02a_Claims_Repository\obj\Debug\02a_Claims_Repository.dll
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\02a_Claims_Repository\obj\Debug\02a_Claims_Repository.pdb

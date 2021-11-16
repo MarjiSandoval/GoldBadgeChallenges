@@ -1,0 +1,10 @@
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe\bin\Debug\01_KomodoCafe.exe.config
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe\bin\Debug\01_KomodoCafe.exe
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe\bin\Debug\01_KomodoCafe.pdb
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe\bin\Debug\01_KomodoCafe_Repository.dll
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe\bin\Debug\01_KomodoCafe_Repository.pdb
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe\obj\Debug\01_KomodoCafe.csproj.AssemblyReference.cache
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe\obj\Debug\01_KomodoCafe.csproj.CoreCompileInputs.cache
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe\obj\Debug\01_KomodoCafe.csproj.CopyComplete
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe\obj\Debug\01_KomodoCafe.exe
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\01_KomodoCafe\obj\Debug\01_KomodoCafe.pdb

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9651DA51-73E4-4D40-9ADC-46ED819627C2}</ProjectGuid>
+    <ProjectGuid>{80032E88-89D1-4088-8C48-703968673D43}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_02a_Claims</RootNamespace>
-    <AssemblyName>02a_Claims</AssemblyName>
+    <RootNamespace>_00_JunkYard</RootNamespace>
+    <AssemblyName>00_JunkYard</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,18 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Customer.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\02a_Claims_Repository\02a_Claims_Repository.csproj">
-      <Project>{b8386a0b-3ef6-4f0f-9ceb-bba25aca9753}</Project>
-      <Name>02a_Claims_Repository</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

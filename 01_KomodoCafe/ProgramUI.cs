@@ -102,8 +102,12 @@ namespace _01_KomodoCafe
         private void DisplayMeal(Menu menu)
         {
             Console.Clear();
-
-            List<Menu> MealName = _menu.GetMenu();
+            Console.WriteLine($"{menu.ID} \n" +
+                $"{menu.MealName}\n" +
+                $"{menu.Description}\n" +
+                $"{menu.Ingredients}\n" +
+                $"{menu.Price}\n");
+            
         }
 
         private void DeleteMenuItem()
