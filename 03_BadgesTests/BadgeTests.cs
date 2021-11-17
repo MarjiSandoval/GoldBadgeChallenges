@@ -16,9 +16,9 @@ namespace _03_BadgesTests
         public void Init()
         {
             _badge = new BadgeRepository();
-            Badge badge1 = new Badge(12345, new List<string> { "A7" });
-            Badge badge2 = new Badge(22345, new List<string> { "A1, A4, B1, B2" });
-            Badge badge3 = new Badge(32345, new List<string> { "A4, A5" }); 
+            badge1 = new Badge(12345, new List<string> { "A7" });
+            badge2 = new Badge(22345, new List<string> { "A1", "A4", "B1", "B2" });
+            badge3 = new Badge(32345, new List<string> { "A4","A5" }); 
 
             _badge.AddBadge(badge1);
             _badge.AddBadge(badge2);
@@ -27,18 +27,57 @@ namespace _03_BadgesTests
         [TestMethod]
         public void AddBadge_ShouldReturnTrue()
         {
-            bool expected = true;
-            bool actual = _badge.AddBadge(badge1);
+            Badge badgeA = new Badge(44875, new List<string> { "A7" });
 
-            Assert.AreEqual(expected, actual);
+            bool expected = true;
+            bool actual = _badge.AddBadge(badgeA);
+
+           Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
-        public void GiveMeOneBadge_ShouldReturnTrue()
+        public void GiveMeOneBadge_ShouldReturnBadge()
         {
-            Dictionary<Badge, doors> dict = _badge.GiveMeOneBadge(???);
-            int expected = _badge.GiveMeOneBadge()
+            Badge badge4 = new Badge(42345, new List<string> { "A1", "A4", "B1", "B2" });
+            _badge.AddBadge(badge4);
+            int expected = 42345;
+            Badge actual = _badge.GiveMeOneBadge(42345);
 
+            Assert.AreEqual(expected, actual.BadgeNumber);
+
+        }
+        [TestMethod]
+        public void AddDoor_ShouldReturnTrue()
+        {
+            var success = _badge.AddDoor(32345, "D6");
+            foreach (var item in badge3.Doors)
+            {
+                Console.WriteLine(item);
+                
+            }
+            Assert.AreEqual(true, success);
+        }
+
+        [TestMethod]
+        public void RemoveDoor_ShouldReturnTrue()
+        {
+            var success = _badge.RemoveDoor(32345, "A5");
+            foreach (var item in badge3.Doors)
+            {
+                Console.WriteLine(item);
+            }
+            Assert.AreEqual(true, success);
+        }
+
+        [TestMethod]
+        public void RemoveBadge_ShouldReturnTrue()
+        {
+            var success = _badge.RemoveBadge(badge3);
+            foreach (var item in _badge.GetAllBadges())
+            {
+                Console.WriteLine(item.Value.BadgeNumber);
+            }
+            Assert.AreEqual(true, success);
         }
     }
 }

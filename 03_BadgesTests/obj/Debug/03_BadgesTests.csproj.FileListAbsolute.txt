@@ -1,0 +1,15 @@
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\03_BadgesTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\03_BadgesTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\03_BadgesTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\03_BadgesTests\bin\Debug\03_BadgesTests.dll
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\03_BadgesTests\bin\Debug\03_BadgesTests.pdb
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\03_BadgesTests\bin\Debug\03_BadgesRepository.dll
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\03_BadgesTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\03_BadgesTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\03_BadgesTests\bin\Debug\03_BadgesRepository.pdb
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\03_BadgesTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\03_BadgesTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\03_BadgesTests\obj\Debug\03_BadgesTests.csproj.AssemblyReference.cache
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\03_BadgesTests\obj\Debug\03_BadgesTests.csproj.CoreCompileInputs.cache
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\03_BadgesTests\obj\Debug\03_BadgesTests.dll
+C:\Users\momma\OneDrive\Documents\GoldBadge_Project\GoldBadgeProject\03_BadgesTests\obj\Debug\03_BadgesTests.pdb

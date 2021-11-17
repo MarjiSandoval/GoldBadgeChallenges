@@ -38,13 +38,13 @@ namespace _03_BadgesRepository
             return null;
         }
         // Update
-        public bool AddDoor(int key, string value)
+        public bool AddDoor(int key, string doorName)
         {
             Badge badge = GiveMeOneBadge(key);
             if (badge != null)
             {
 
-                badge.Doors.Add(value);
+                badge.Doors.Add(doorName);
                 return true;
 
             }
