@@ -17,7 +17,7 @@ namespace _03_BadgesRepository
 
        
         public int BadgeNumber { get; set; }
-        public List<string> Doors { get; set; }
+        public List<string> Doors { get; set; } = new List<string>();
 
       
     }

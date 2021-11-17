@@ -69,34 +69,56 @@ namespace _03_Badges
         private void AddBadge()
         {
             Console.Clear();
-            Dictionary<int, Badge> badgeRepo = new Dictionary<int, Badge>();
 
             Badge newBadge = new Badge();
             Console.WriteLine("What is the number on the Badge? \n ");
             newBadge.BadgeNumber = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("List a door that it needs access to: \n");
-            badgeRepo.Add(BadgeNumber, userInput);
+            
 
-            Console.WriteLine("Any other doors? y/n \n");
+            bool hasAssignedAllDoors = false;
+            while (! hasAssignedAllDoors)
+            {
+                Console.WriteLine("List a door that it needs access to: \n");
+                string userInput = Console.ReadLine();
+                newBadge.Doors.Add(userInput);
 
-            //if yes
-            Console.WriteLine("List a door it needs access to:  \n");
+                Console.WriteLine("Do you want to add another door? y/n");
+                userInput = Console.ReadLine();
 
-            //if no
-            //Return to main menu;
+                if (userInput == "y".ToLower())
+                {
+                    continue;
+                }
+                else
+                {
+                    hasAssignedAllDoors = true;
+                }
+            }
+
+            if (_badge.AddBadge(newBadge))
+            {
+                Console.WriteLine("Badge was added.");
+            }
+            else
+                Console.WriteLine("Badge was not created");
+
+
+
+            AnyKey();
 
         }
         private void UpdateBadge()
         {
             Console.Clear();
-            Dictionary<int, Badge> badgeRepo = new Dictionary<int, Badge>();
 
-            Badge newBadge = new Badge();
+
+
             Console.WriteLine("What is the badge number to update? \n");
-            newBadge.BadgeNumber = int.Parse(Console.ReadLine());
+            var userInputBadgeNumber = int.Parse(Console.ReadLine());
 
-            Console.WriteLine($"{newBadge} has access to {doors}");
+            var badge = _badge.GiveMeOneBadge(userInputBadgeNumber);
+            DisplayBadgeInfo(badge);
             Console.WriteLine("What would you like to do? \n" +
                 "1. Remove a door \n" +
                 "2. Add a door \n");
@@ -105,33 +127,55 @@ namespace _03_Badges
             switch (userInput)
             {
                 case "1":
-                    RemoveBadge();
+                    Console.WriteLine("What door would you like to remove? ");
+                    userInput = Console.ReadLine();
+                    _badge.RemoveDoor(badge.BadgeNumber, userInput);
                     break;
                 case "2":
-                    AddBadge();
+                    Console.WriteLine("What door would you like to add? ");
+                    userInput = Console.ReadLine();
+                    _badge.AddDoor(badge.BadgeNumber, userInput);
                     break;
                 default:
                     Exit();
                     break;
             }
         }
+
         private void ShowAll()
         {
             Console.Clear();
-            Dictionary<int, Badge> badgeRepo = new Dictionary<int, Badge>();
+            Dictionary<int, Badge> badgeRepo = _badge.GetAllBadges();
 
             foreach (var item in badgeRepo)
             {
-                Console.WriteLine($"{badgeNumber}{Doors}");
+                DisplayBadgeInfo(item.Value);
 
             }
             Console.ReadKey();
         }
-
-        private void RemoveBadge()
+        private void DisplayBadgeInfo(Badge badge)
         {
-            Console.Clear();
+            Console.WriteLine($"Id: {badge.BadgeNumber}");
+            foreach (var door in badge.Doors)
+            {
+                Console.WriteLine(door);
+            }
+            Console.WriteLine();
+        }
+
+        private void Seed()
+        {
             Dictionary<int, Badge> badgeRepo = new Dictionary<int, Badge>();
+
+            Badge badge1 = new Badge(12345, new List<string> { "A7" });
+            Badge badge2 = new Badge(22345, new List<string> { "A1, A4, B1, B2" });
+            Badge badge3 = new Badge(32345, new List<string> { "A4, A5" });
+
+            _badge.AddBadge(badge1);
+            _badge.AddBadge(badge2);
+            _badge.AddBadge(badge3);
+
 
         }
     }

@@ -11,7 +11,7 @@ namespace _03_BadgesRepository
         //Create
         protected readonly Dictionary<int, Badge> badgeRepo = new Dictionary<int, Badge>();
 
-        bool AddBadge(Badge badge)
+        public bool AddBadge(Badge badge)
         {
             if (badge is null)
             {
@@ -21,8 +21,12 @@ namespace _03_BadgesRepository
             return true;
 
         }
+        public Dictionary<int, Badge> GetAllBadges()
+        {
+            return badgeRepo;
+        }
         // Read One
-        Badge GiveMeOneBadge(int badgeNumber)
+        public Badge GiveMeOneBadge(int badgeNumber)
         {
             foreach (var BadgeNumber in badgeRepo)
             {
@@ -64,7 +68,7 @@ namespace _03_BadgesRepository
             {
                 return false;
             }
-            badgeRepo.Remove();
+            badgeRepo.Remove(badge.BadgeNumber);
             return true;
 
         }

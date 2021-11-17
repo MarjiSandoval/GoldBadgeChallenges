@@ -8,7 +8,7 @@ namespace _02a_Claims_UnitTests
     
 
     [TestClass]
-    public class UnitTest1
+    public class ClaimsTests
     {
         private ClaimsRepository _claims;
         private Claims claim1;
